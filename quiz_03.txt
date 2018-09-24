@@ -1,0 +1,80 @@
+
+# 1.
+What are the steps to writing code, as described by All of Programming?
+(string) ---
+work an example: do the problem yourself
+write down the process of working the example
+generalize the steps
+generalize the values
+generalize the repetitions
+generalize the conditioal behavior
+Test algorithm
+translate to code
+# 2.
+Expand the macro in the code below, and explain why it causes a compile error ("expected expression before '=' token").
+
+#define THRESHOLD = 10;
+
+void f(int x)
+{
+  if(x > THRESHOLD){
+    printf("x is too big!\n");
+  }
+}
+
+(string) ---
+expanding the macro in the code will result in x > =, because to construct a macro requires no '=' sign thus a compilation error will occur.
+
+# 3.
+What is the difference betwen white box testing and black box testing?
+(string) ---
+in black box testing, the tester only consider the expected behavior of the function and it checks if the result of the function with given input yields values equal to the expected output without looking at the code body itself. In white box testing, the code must be examined to device test cases.  
+
+# 4.
+What is an "assert" and why is it useful?
+(string) ---
+in testing assert is the key word to check if a statement is true. if not the codes are aborted immediately. 
+
+# 5.
+Write test cases to exercise all of the possible code paths in the function below:
+
+int f(int x, int y)
+{
+  int retval = 0;
+
+  if(x >= 0){
+    retval = x;
+  }
+  else{
+    retval = -x;
+  }
+
+  if(y > retval)
+  {
+    retval += y;
+  }
+  else{
+    retval -= y;
+  }
+
+  return(retval);
+}
+
+(code) ---
+void test(){
+	assert(f(1,1)==0);
+	assert(f(1,2)==3);
+	assert(f(-1,2)==3);	
+	assert(f(-1,0)==1);
+{
+# 6.
+What questions do you have about the material in this chapter?
+(string) ---
+still dont quite understand the meaning of expanding the macro
+
+# 7.
+What concepts would you most like to review in class?
+(string) ---
+macro, compiling process in c.
+
+

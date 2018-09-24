@@ -1,0 +1,66 @@
+
+# 1.
+
+What is 60 (decimal) in binary?
+(string) ---
+00111100
+# 2.
+
+What is printed as a result of running the code below?
+
+  char x = 'X';
+  printf("x: %d\n", (int)x);
+
+(string) ---
+x: 88
+
+# 3.
+What is printed as a result of running the code below?
+
+  int total = 350;
+  int dailyAveragePercent = total / 365 * 100;
+  printf("average (percentage): %d\n", dailyAveragePercent);
+
+(string) ---
+average (percentage): 0
+
+# 4.
+What is 350 in hex?
+(string) ---
+0x15E
+
+
+# 5. 
+Fix the printf specifiers in the code below so that the printed result is exactly:
+  pi = 3.1415
+  e / 10 = 0.272
+(i.e., replace the %d with something appropriate)
+
+(code) ---
+
+int main(int argc, char* argv[])
+{
+  const int PI = 3.14159265;
+  const int E = 2.71828182;
+
+  printf("pi = %.4f\n", PI);
+  printf("e / 10 = %.3f\n", E / 10.0);
+
+}
+
+# 6.
+What is the difference between a struct and an enum?  Both provide ways to group collections of identifiers.
+
+(string) ---
+The difference between a struct and a enum is that an enum is a custom type of named set of constants where as a struct can incorporate changable variables. 
+# 7.
+What questions do you have about the material in this chapter?
+(string) ---
+when or whennot to use typedef is unclear
+
+# 8.
+What concepts would you most like to review in class?
+(string) ---
+typedef and overflow/underflow
+
+

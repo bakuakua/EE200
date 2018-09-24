@@ -1,0 +1,94 @@
+
+# 1.
+Convert the following numbers to binary, using 8-bit 2's complement
+-1, -12, -128, 4
+(string) ---
+11111111, 11110100, 10000000, 00000100
+
+# 2.
+Convert the following 8-bit 2's complement binary numbers to decimal:
+10000011, 00001011, 11111100
+(string) ---
+-125, 11, -4 
+
+
+# 3.
+Write a declaration for a struct representing a complex number, with double-precision floating point values for both the real and imaginary parts.
+(code) ---
+struct inum{
+	double real;
+	double imaginary;
+}
+
+
+# 4.
+Write a declaration for an enum defining the possible positions of a car's transmission.
+
+(code) ---
+enum transmission{P, N, R, D}
+# 5.
+Given the declarations:
+  int x = 5;
+  float f = 1.2;
+  char c = 'a';
+
+What is the type and result of each of the following expressions?
+  x + 2
+  x + f
+  x + c
+  f + c
+  c + c
+  x / 2
+  x / 10.0
+
+(string) ---
+int 7
+float 6.2
+int 102
+float 98.2
+int 194
+int 2
+float 0.5
+
+# 6.
+Some embedded devices (i.e., very cheap low-power processors) do not have floating-point hardware, so performing a floating-point operation takes as much as 100 times longer than an integer operation.
+
+Rewrite the code below to use integer math, while minimizing the loss of precision.
+
+  unsigned char calculate(unsigned char input)
+  {
+    float x = input;
+    x = x / 256;
+    float output = x * x * x;
+
+    return((char)(output * 256));
+  }
+
+(code) ---
+ unsigned char calculate(unsigned char input)
+  {
+    int x = input;
+    float output = (float)(x * x * x);
+    output = output/(256*256*256);
+    return((char)(output * 256));
+  }
+
+
+
+# 7.
+Write the declaration for a struct representing a rectangle (position and size) that will be displayed on your computer screen.  Explain briefly why you chose the datatype(s) you did.
+(code) ---
+struct rectangle{
+	int xposition; //topleft corner x position
+	int yposition; //topleft corner y position
+	int width;
+    int length;
+}
+On a computer screen the pixel grides positions are integers, so if we have the positon of the topleft corner of the rectangle we will be able to draw it given its width and length which are also numbers of pixels (integer).
+
+# 8.
+DEAD and BEEF are two English words that are also valid hex numbers.  Can you think of any others?
+(string) ---
+FEED
+BEAD
+DEAF

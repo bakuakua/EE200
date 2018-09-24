@@ -1,0 +1,83 @@
+# 1.
+Which of these are valid variable names?
+(choose all that apply) ---
+[v] puffin
+[ ] 2can
+[v] SEAGULL
+[ ] red-headed-woodpecker
+[v] owl0_0
+[v] _pelican_
+[v] __FLAMINGO__
+
+# 2.
+What is an lvalue?
+(string) ---
+An lvalue is the left variable in an assignment operation; it is the variable being assigned value to.
+# 3.
+What is the result of 25 % 3 ?
+(string) ---
+1
+
+# 4.
+The following questions refer to this code block:
+
+    int doStuff(int start, int stop)
+    {
+        int x = 5;
+        if(start < stop){
+            int x = 0;
+            printf("#1: x = %d\n", x);
+        }
+        printf("#2: x = %d\n", x);
+    }
+
+    int main()
+    {
+        int x = 1000;
+        doStuff(2, 10);
+        printf("#3: x = %d\n", x);
+    }
+
+What value will be printed for printf #1?
+(integer) ---
+0
+
+# 5.
+What value will be printed for printf #2?
+(integer) ---
+5
+
+# 6.
+What value will be printed for printf #3?
+(integer) ---
+1000
+
+# 7.
+Why do switch/case statements use the keyword `break`, but if/else statements do not?
+(string) ---
+because in a switch/case statement after one case satisfies the condition in switch, that case is executed then fall through automatically to the next case despite the condition in the next case.
+we need break to avoid such fall through if we want only that case to be executed.
+
+# 8.
+What is the difference between a while and do-while loop (besides the fact that a do-while begins with the keyword `do`)?
+(string) ---
+in a while loop, the condition expression is checked before any execution of the loop body; 
+in a do while loop, the loop is executed once then the condition is checked. 
+
+# 9.
+Which keyword can only be used inside a loop?
+(string) ---
+continue
+
+# 10.
+What questions do you have about the material in this chapter?
+(string) ---
+while, do while, and for loop are interchangable in many cases.
+which one is faster performance wise
+
+# 11.
+What concepts would you most like to review in class?
+(string) ---
+I have studied the basics before, so i am pretty comfortable with this material. 
+
+

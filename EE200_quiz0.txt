@@ -1,0 +1,29 @@
+# 1.
+What name should I call you?
+(string) Ricky
+
+
+# 2.
+What is your preferred email address?
+(string) bakuakua@gmail.com		
+
+
+# 3.
+What programming experience do you have?
+Even if you don't feel like you have "real" programming experience, please include anything that involves computers automatically doing what you tell them: spreadsheet formulas, HTML/CSS, LabVIEW, etc.
+(string) Java,python,assembly,matlab,c,php 
+
+# 4.
+How comfortable are you with the Unix/Linux command line?
+(choose 1) ---
+[ ] Uhh, what's the command line?
+[ ] I've run a few commands in a terminal
+[v] I can navigate the filesystem and edit files
+[ ] I spend a significant fraction of my time using the terminal
+[ ] I can write a bash one-liner that does just about anything
+
+# 5.
+What is your github user ID? (If you don't have one, go sign up)
+(string) bakuakua
+
+

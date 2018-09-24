@@ -1,0 +1,184 @@
+
+# 1. 
+What value will be printed?
+
+  int f(int x){
+      return(2 + x * 5);
+  }
+
+  int g(int x, int y){
+      if(x > y){
+          return x;
+      }
+      else{
+          return y;
+      }
+  }
+
+  int main(int argc, char* argv[])
+  {
+      printf("result: %d\n", g(f(4), 15));
+      return(0);
+  }
+
+(integer) ---
+22
+
+# 2.
+Rewrite this for loop as a while loop:
+
+  for(int i = 0; i < 100; i++){
+      if(i % 10 == 0){
+          continue;
+      }
+      printf("i: %d\n");
+  }
+
+(code) ---
+int i = 0;
+while(i<100){
+    if(i%10==0){
+	continue; 	
+    }
+    printf("i: %d\n");
+    i++;
+}
+
+# 3.
+What value will be printed?
+
+  int f(int x){
+      x = x + 1;
+      return(x);
+  }
+
+  int main(int argc, char* argv[])
+  {
+      int i = 0;
+      f(i);
+      f(i);
+      f(i);
+      f(i);
+      printf("result: %d\n", f(i));
+      return(0);
+  }
+
+(integer) ---
+1
+# 4.
+How many times will "salamander!" be printed?
+
+  int f(int x){
+      printf("salamander!\n");
+      return(x);
+  }
+
+  int main(int argc, char* argv[])
+  {
+      int i = 0;
+      f(0);
+      f(i);
+      f(i++);
+      if(f(i) || f(i++)){
+          printf("goodbye.\n");
+      }
+
+      return(0);
+  }
+
+(integer) ---
+5
+
+
+# 5.
+
+How many times will "spotted newt" be printed?
+
+  int main(int argc, char* argv[])
+  {
+      for(i = 0; i >= 10; i++){ 
+          printf("spotted newt\n");
+      }
+      return(0);
+  }
+(integer) ---
+infinite times
+
+# 6.
+
+Rewrite this code to use `continue` (hopefully making it simpler!)
+
+  int locateUnknownReptiles(int reptiles[], int len)
+  {
+      for(int i = 0; i < len; i++){
+          if(reptiles[i] == SNAKE){ }
+          else if(reptiles[i] != LIZARD) {
+              if(reptiles[i] != TURTLE) {
+                  // No idea what it is, flag it
+                  printf("Unknown reptile %d found!\n", reptiles[i]);
+              }
+          }
+      }
+      return(0);
+  }
+
+(code) ---
+ int locateUnknownReptiles(int reptiles[], int len)
+  {
+      for(int i = 0; i < len; i++){
+          if(reptiles[i] == SNAKE){continue; }
+          else if(reptiles[i] != LIZARD) {
+              if(reptiles[i] != TURTLE) {
+                  // No idea what it is, flag it
+                  printf("Unknown reptile %d found!\n", reptiles[i]);
+              }
+          }
+      }
+      return(0);
+  }
+ 
+  # 7.
+  Rewrite the code in #6 to use a switch/case statement (hopefully making it simpler!)
+  
+  (code) ---
+  int locateUnknownReptiles(int reptiles[], int len){
+  	for(int i = 0; i<len; i++){
+		switch(reptiles[i]){
+			case SNAKE:
+                   		continue;
+			case LIZARD:
+                   		continue;
+			case TURTLE:
+                   		conitnue;
+                	case default:
+                   		printf("Unknown reptile %d found!\n", reptiles[i]);
+			}
+		}
+  }
+  # 8.
+  What is the output of running this code?
+  
+    int main(int argc, char* argv[]) {
+       for (int i = 0; i < 3; i++) {
+          for (int j = 0; j < 3; j++) {
+              printf("| ");
+              if (i == j) {
+                  printf("O ");
+              }
+              else if  (i==1 || (j==1 && i != 2)){
+                  printf("X ");
+              }
+              else {
+                  printf("  ");
+              }
+          }
+          printf("|\n");
+      }
+      return EXIT_SUCCESS;
+  }
+
+(string) ---
+| O | X |   |
+| X | O | X |
+|   |   | O |
+

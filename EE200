@@ -1,0 +1,80 @@
+# 1.
+Which of these are valid variable names?
+(choose all that apply) ---
+[ ] puffin
+[ ] 2can
+[ ] SEAGULL
+[ ] red-headed-woodpecker
+[ ] owl0_0
+[ ] _pelican_
+[ ] __FLAMINGO__
+
+# 2.
+What is an lvalue?
+(string) ---
+
+# 3.
+What is the result of 25 % 3 ?
+(string) ---
+
+
+# 4.
+The following questions refer to this code block:
+
+    int doStuff(int start, int stop)
+    {
+        int x = 5;
+        if(start < stop){
+            int x = 0;
+            printf("#1: x = %d\n", x);
+        }
+        printf("#2: x = %d\n", x);
+    }
+
+    int main()
+    {
+        int x = 1000;
+        doStuff(2, 10);
+        printf("#3: x = %d\n", x);
+    }
+
+What value will be printed for printf #1?
+(integer) ---
+
+
+# 5.
+What value will be printed for printf #2?
+(integer) ---
+
+
+# 6.
+What value will be printed for printf #3?
+(integer) ---
+
+
+# 7.
+Why do switch/case statements use the keyword `break`, but if/else statements do not?
+(string) ---
+
+
+# 8.
+What is the difference between a while and do-while loop (besides the fact that a do-while begins with the keyword `do`)?
+(string) ---
+
+
+# 9.
+Which keyword can only be used inside a loop?
+(string) ---
+
+
+# 10.
+What questions do you have about the material in this chapter?
+(string) ---
+
+
+# 11.
+What concepts would you most like to review in class?
+(string) ---
+
+
+
