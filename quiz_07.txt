@@ -1,0 +1,46 @@
+
+# 1.
+If a command is run with no arguments, what are the contents of argv[0]?
+(string) --
+# 2.
+What does the book say is the difference between a system call and a library call?
+(string) ---
+
+# 3.
+How can your code catch when a system call fails?
+(select all that apply) ---
+[ ] By checking the variable `errno`
+[ ] By testing return values
+[ ] By reading from stderr
+[ ] By examining the kernel log
+
+# 4.
+If my code opens a file with:
+
+    FILE* f = fopen('quiz_07.txt', 'w+');
+
+and the file exists, what happens?
+(select one) ---
+[ ] The function returns NULL
+[ ] The file is opened, and its contents are available for reading and writing
+[ ] The file is opened for writing, but existing text is erased
+[ ] The file is opened for writing, and writes add new text at the end
+
+# 5.
+Why does fgetc return an int, since its job is to return the next character from a file?
+(select one) ---
+[ ] The return value is an error code, and the character is passed with a pointer
+[ ] So that it can return a non-char value to indicate the end of a file
+[ ] Because some file types (e.g, UTF-16) use more than 1 byte to represent a character
+[ ] Because numeric values are returned as integers, rather than characters
+
+# 6.
+What questions do you have about the material in this chapter?
+(string) ---
+
+
+# 7.
+What concepts would you most like to review in class?
+(string) ---
+
+

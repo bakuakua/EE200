@@ -1,0 +1,61 @@
+
+# 1.
+If we have the declaration:
+  char part[] = "radiator"
+
+What is the length of the `part` array (in bytes)?
+
+(integer) ---
+8
+
+# 2.
+If we have the declarations:
+  char castiron[] = "My cast iron skillet";
+  char pan[5];
+
+Which of the following are valid ways to copy the string (i.e., succeed in copying as much of the string as possible, and don't cause something bad to happen)?
+
+(select all that apply) ---
+[ ] pan = castiron;
+[ ] *pan = *castiron;
+[ ] &pan = &castiron;
+[ ] strcmp(pan, castiron);
+[v] strcpy(pan, castiron);
+[ ] strncpy(pan, castiron, 5);
+
+# 3.
+Which of these are valid declarations of functions taking muldimensional arrays?
+
+(select all that apply) ---
+[v] saute(int x[2][2])
+[ ] deepfry(int x[][2])
+[ ] braise(int x[2][])
+[ ] bake(int x[][2][3])
+[ ] grill(int x[2][5][])
+
+# 4.
+Why would you use an array of pointers to arrays instead of a 2D array?
+
+(select all that apply) ---
+[ ] Accessing elements is faster because of pointer dereferencing.
+[v] The arrays can be different sizes, instead of all the same.
+[ ] The arrays can hold different types of data, without the need to cast.
+[v] It allows us to rearrange the "matrix" just by manipulating pointers.
+
+# 5.
+What are two examples the book gives for why function pointers are useful?
+(string) ---
+1.some functions perform similar task to a given data structure like doing something to all elements of an array. function pointer is useful here because we can pass what to do with the elements as a parameter.
+2.sorting. We can write generic compare function and pass it as parameters in sorting functions. 
+# 6.
+What questions do you have about the material in this chapter?
+(string) ---
+what is the benefit of using typedef during function cast? 
+The books explanation wasnt too clear.
+
+# 7.
+What concepts would you most like to review in class?
+(string) ---
+function cast in sorting is a bit complicated. 
+
+

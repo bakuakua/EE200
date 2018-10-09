@@ -1,6 +1,6 @@
 # Resources
-You should fill in this section with the resources that you used to develop your code.  You don't need to include the teaching staff or the textbook, but you should list anyone you worked with, and any online or paper resources you used.
-
+Looked up how to write stdin into a file https://www.dreamincode.net/forums/topic/264800-write-standard-input-to-file/.
+Sscanf format parse tab delimited https://www.linuxquestions.org/questions/programming-9/sscanf-to-parse-tabs-in-c-4175465426/
 
 # Overview
 Unlike the previous problems, each of these is a complete program.  This has several implications:
